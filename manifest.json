@@ -3,7 +3,10 @@
   "name": "Tomar Asistencia",
   "description": "Esta extension toma asistencias en SMS de Digital House",
   "version": "1.0",
-  "permissions": ["webNavigation"],
+  "permissions": ["storage", "declarativeContent", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": "yellowhand.png"
